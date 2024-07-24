@@ -1,5 +1,5 @@
 {
-  description = "tunnel localhost for a quick 'lgtm?'";
+  description = "typescript playground";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
