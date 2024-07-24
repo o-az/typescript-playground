@@ -1,0 +1,100 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.8.3/schema.json",
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true
+  },
+  "organizeImports": {
+    "enabled": false,
+    "include": ["*.ts", "*.json", "*.jsonc"],
+    "ignore": ["_"]
+  },
+  "files": {
+    "maxSize": 3048576,
+    "ignoreUnknown": true,
+    "include": ["**/*.ts", "*.ts", "*.json", "*.jsonc"],
+    "ignore": ["_"]
+  },
+  "json": {
+    "linter": {
+      "enabled": true
+    },
+    "parser": {
+      "allowComments": true,
+      "allowTrailingCommas": true
+    },
+    "formatter": {
+      "enabled": true
+    }
+  },
+  "javascript": {
+    "globals": [],
+    "linter": {
+      "enabled": true
+    },
+    "parser": {
+      "unsafeParameterDecoratorsEnabled": true
+    },
+    "formatter": {
+      "enabled": true,
+      "lineWidth": 100,
+      "indentWidth": 2,
+      "indentStyle": "space",
+      "quoteStyle": "single",
+      "bracketSpacing": true,
+      "semicolons": "asNeeded",
+      "trailingCommas": "none",
+      "arrowParentheses": "asNeeded"
+    }
+  },
+  "formatter": {
+    "enabled": true,
+    "lineWidth": 100,
+    "indentWidth": 2,
+    "indentStyle": "space",
+    "formatWithErrors": true,
+    "attributePosition": "auto",
+    "include": ["*.ts", "**/*.ts", "*.json", "*.jsonc", "./apps/api/nitro.config.ts"],
+    "ignore": ["_"]
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "all": true,
+      "correctness": {
+        "noNodejsModules": "off",
+        "noUnusedVariables": "off"
+      },
+      "complexity": {
+        "noBannedTypes": "off"
+      },
+      "suspicious": {
+        "useAwait": "off",
+        "noConsoleLog": "off",
+        "useNamespaceKeyword": "off"
+      },
+      "performance": {
+        "noBarrelFile": "off",
+        "noReExportAll": "off"
+      },
+      "style": {
+        "noNamespace": "off",
+        "useImportType": "off",
+        "noNegationElse": "off",
+        "noDefaultExport": "off",
+        "noNamespaceImport": "off",
+        "useBlockStatements": "off",
+        "useCollapsedElseIf": "off",
+        "useNamingConvention": "off",
+        "useShorthandArrayType": "off",
+        "useConsistentArrayType": {
+          "level": "warn",
+          "options": { "syntax": "generic" }
+        }
+      }
+    },
+    "include": ["*.ts", "*.json", "*.jsonc", "apps/**/*.ts"],
+    "ignore": ["_"]
+  }
+}
